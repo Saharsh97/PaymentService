@@ -65,6 +65,12 @@ public class RazorpayPaymentService implements PaymentService{
 
     @Override
     public String getStatus(String orderId) {
+        // go to your DB and check if you already have
+        // an entry for this orderId
+        // if not:
+        //      response = razorpayClient.getStatus()
+        //      update the DB with this orderId and response
+        // return db.get(orderId)
         return null;
     }
 
